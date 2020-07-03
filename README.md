@@ -6,7 +6,7 @@ Regulators, model validation teams and model developers need to adjust to differ
 
 These notes aim to go into detail what topics model validation of machine learning models should address. 
 
-The term _model validation_ actually is used in several contexts and can mean at least the following three things:
+The term _model validation_ is actually used in several contexts and can mean at least the following three things:
 
 * **Model evaluation:** Estimating a model's performance,
 
@@ -26,16 +26,14 @@ These notes are split in the following sections:
 
 [**Implementation:**](#implementation) This section highlights how errors could occur during the programming part of model development, and how to possibly avoid them.
 
-[**Output:**](#output) This section is all about verifying the model based on its outputs, a central way of validating any machine learning model.
+[**Output:**](#output) This section is about verifying the model based on its outputs, a central way of validating any machine learning model.
 
 [**Documentation:**](#documentation) Machine learning models have some special requirements on the documentation that differs from classical models.
 
-[**Governance & Use:**](#governance-use) Questions around fulfillment of regulatory requirements and model usage.
+[**Governance and Use:**](#governance-and-use) Questions around fulfillment of regulatory requirements and model usage.
 
 
-Version history:
-
-* July 2020: initial version, comments welcome!
+----
 
 
 **Disclaimer:**
@@ -45,6 +43,14 @@ If you have any questions, suggestions, other comments, or want to collaborate w
 
 I would like to thank Beni Bissig, Henry Morris and Alina Yapparova for helpful comments.
 
+----
+
+Version history:
+
+* July 2020: initial version, comments welcome!
+
+
+----
 
 
 ## Data
@@ -67,8 +73,7 @@ Examples of biased data are:
 * In a hypothetical spam email identification model: All messages of a minority group are labeled as spam.
 * The [tank vs. no tank classification problem](https://www.gwern.net/Tanks): All pictures in the training set were pictures of tanks at day. As a consequence, the model learned to distinguish day from night and all pictures that were taken at night, even if they contained tanks, were classified as not a tank.
 * The [Dog vs. Husky classification problem](https://arxiv.org/abs/1602.04938): All pictures of huskies were taken in front of a snowy background. As a consequence, all pictures in front of snowy background were classified as huskies, even if they were pictures of dogs.
-
-**Human bias:** Assess to what extend humans have been part in data generating, data selection and the data labeling process and could have introduced bias.
+* Human bias: Assess to what extend humans have been part in data generating, data selection and the data labeling process and could have introduced bias.
 
 **Skewed data:** Are test and training data for categorical features evenly distributed over the classes? If not, this could be a source of bias and the assumptions of some models on class balance might be violated.
 
@@ -243,7 +248,7 @@ You can ask the following questions on the model documentation:
 
 
 
-## Governance & Use
+## Governance and Use
 
 Questions to assess whether the model can actually be used in production.
 
@@ -254,5 +259,6 @@ Questions to assess whether the model can actually be used in production.
 * Do you comply with all relevant regulations, both within and outside of your institution?
 * What requirements do regulators have on your model?
 
+----
 
 &copy; 2020 [Adrian Scheerer](https://www.linkedin.com/in/adrianscheerer/)
