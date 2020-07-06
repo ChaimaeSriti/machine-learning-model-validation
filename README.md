@@ -41,8 +41,6 @@ These notes are my personal view and do not necessarily express the opinion of a
 
 If you have any questions, suggestions, other comments, or want to collaborate with me on topics around machine learning model validation please [reach out to me](mailto:adrianscheerer@gmail.com).
 
-I would like to thank Beni Bissig, Henry Morris and Alina Yapparova for helpful comments.
-
 ----
 
 Version history:
